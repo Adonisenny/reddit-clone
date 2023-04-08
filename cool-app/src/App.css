@@ -1,0 +1,177 @@
+.container{
+display: flex;
+justify-content: space-between;
+}
+/* div.scroll{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 600px;
+} */
+.leftDiv {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 8px;
+    max-width: 30%;
+
+
+}
+
+.rightDiv {
+    align-items: right;
+    display: flex;
+    justify-content: right;
+    max-width:30% ;
+    gap: 10px;
+    
+
+}
+.middleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: middle;
+   align-content: center;
+
+}
+.search{
+    min-width: 50%;
+    border-radius: 8px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5px;
+    
+}
+.myform{
+    background: grey;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 150px;
+    
+}
+
+input.search{
+    background-image: url('Images/search3.png');
+    background-repeat: no-repeat;
+    text-indent: 30px;
+    align-content: center;
+    align-items: center;
+    
+}
+.loginput{
+    padding: 8px;
+    border-radius: 7px;
+}
+input.search:focus{
+    background-image:none;
+   }
+   .popular:hover{
+    background-color: rgb(227, 224, 224);
+    padding-top:12px ;
+    padding-left: 10px;
+    padding-bottom: 12px;
+   }
+   /* .game:hover{
+    background-color: rgb(227, 224, 224);
+
+   } */
+   .secul > li:hover{
+    background-color: rgb(227, 224, 224);;
+   }
+    /* .game:hover :not(.secul>li:hover) {
+    background-color: gray;
+   }  */
+
+   .secul > li{
+    margin:10px;
+    padding-top:5px ;
+    padding-bottom: 10px;
+    
+    
+   }
+   
+   .fourthul > li{
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+   }
+   .business > li {
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+   }
+   .crypto > li{
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+   }
+   .television > li {
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+   }
+   .celebrity > li {
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+   }
+        
+       
+   
+   .arrow2:hover{
+    cursor: pointer;
+   }
+   /* .game:hover{
+    background-color: rgb(227, 224, 224);
+    
+   } */
+   .arrow{
+    align-content: flex-end;
+    display: flex;
+    flex-flow:column wrap ;
+   }
+   .arrow2{
+    position:absolute;
+    right: 77%;
+   }
+   .myGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8px;
+   }
+    li{
+    list-style-type: none;
+
+   } 
+   ul{
+    margin-right: 0px;
+   }
+   .box{
+    background-color: white;
+    
+      
+     
+    height:25px;
+    border-radius: 5px;
+    
+    padding: 12px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: left;
+   
+   }
+   .box .div1{
+    display:flex;
+    
+    
+   }
+   .div1{
+   
+   }
+   /* .left {
+    transform: rotate(135deg);
+}
+
+.right {
+    transform: rotate(-41deg);
+} */

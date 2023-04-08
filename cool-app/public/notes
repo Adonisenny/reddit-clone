@@ -1,0 +1,47 @@
+  const [Body,setBody] = useState('')
+  const [Description,setDescription] = useState('')
+  const [formError,setFormError] = useState(null)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if(!Body || !Description){
+      setFormError('Fill it all')
+      return
+    }
+const {data,error} = await supabase
+.from('Threads')
+.insert([{Body,Description}])
+if(error){
+  console.log(error)
+  setFormError('Fill it all')
+}
+if(data){
+  console.log(data)
+  setFormError(null)
+
+}
+  }
+
+
+
+  return (
+    <div className="App">
+      <form onSubmit={handleSubmit}>
+      <label>Description</label>
+        <input 
+        type='text'
+        value={Description}
+        onChange={(e) => setDescription(e.target.value)}
+         />
+          <label>My Take</label>
+
+          <input 
+        type='text'
+        value={Body}
+        onChange={(e) => setBody(e.target.value)}
+         />
+<button>Submit</button>
+      </form>
+      
+       </div>  
+  )
